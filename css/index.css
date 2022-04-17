@@ -13,7 +13,7 @@ h1 {
   line-height: 39px;
   text-align: left;
   color: #1E7DB3;
-  padding-bottom: 30px;
+  padding-bottom: 20px;
 }
 h2 {
   font-family: 'Oswald', sans-serif;
@@ -39,9 +39,6 @@ p {
   font-weight: 300;
   font-size: 18px;
   line-height: 23px;
-  display: flex;
-  align-items: center;
-  text-align: center;
   color: #000000;
 }
 .header {
@@ -109,8 +106,8 @@ p {
   color: #000;
 }
 .icons .icon i {
-  font-size: 30px;
-  margin-left: 4px;
+  font-size: 35px;
+  margin-left: 5px;
 }
 .general {
   width: 100%;
@@ -124,7 +121,7 @@ p {
 }
 .footer {
   margin-top: 100px;
-  padding-top: 30px;
+  padding-top: 40px;
   background-color: #B5DDF3;
 }
 .footer a {
@@ -150,9 +147,12 @@ p {
   width: 300px;
 }
 .footer .h22:hover {
-  color: #1E7DB2;
+  text-decoration-color: #1E7DB2;
   text-decoration-line: underline;
-  transition: 0.3s;
+  transition: 0s;
+}
+.footer .icons {
+  padding-top: 10px;
 }
 .footer .icons .icon {
   padding-right: 5px;
@@ -165,6 +165,9 @@ p {
 .footer .icons .icon i {
   font-size: 40px;
   margin-right: 5px;
+}
+.footer .icons .icon i:first-child {
+  margin-right: 0;
 }
 .footer .foot {
   background-color: #B5DDF3;
@@ -212,21 +215,22 @@ p {
   color: #000000;
   padding-left: 40px;
   width: 175px;
+  text-align: center;
+  display: flex;
 }
 .about_us {
   padding-top: 50px;
-  margin-top: 50px;
+  margin-top: 65px;
   background-color: #D5E8F2;
   width: 100%;
   display: flex;
   align-items: center;
   text-align: left;
 }
-.about_us .photo {
+.about_us img {
   float: right;
   height: 355px;
-  width: 600px;
-  display: flex;
+  width: 90%;
   margin-bottom: 70px;
   padding-top: 30px;
 }
@@ -255,14 +259,17 @@ p {
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
-  line-height: 54px;
+  line-height: 50px;
   color: #FFFFFF;
+}
+.about_us .about_us_button a i {
+  padding-left: 5px;
 }
 .about_us .about_us_button:hover {
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .catalog_lend {
-  margin-top: 35px;
+  margin-top: 65px;
   margin-bottom: 20px;
 }
 .catalog_lend .block_catalog {
@@ -297,8 +304,8 @@ p {
 .catalog_lend .block_catalog .block_text_catalog hr {
   width: 50%;
   background-color: #1E7DB2;
-  margin-bottom: 25px;
-  margin-top: 3px;
+  margin-bottom: 20px;
+  margin-top: 5px;
   border: 1px solid #1E7DB2;
 }
 .catalog_lend .block_catalog .block_text_catalog h3 {
@@ -314,7 +321,7 @@ p {
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 .account {
-  margin-top: 50px;
+  margin-top: 65px;
   margin-bottom: 20px;
 }
 .account .account_block {
@@ -341,7 +348,7 @@ p {
   font-style: normal;
   font-weight: 300;
   font-size: 24px;
-  line-height: 36px;
+  line-height: 50px;
   color: #000000;
   padding-left: 10px;
   margin: 10px;
@@ -349,6 +356,13 @@ p {
 .account .account_block .account_block_with_form .result div,
 .account .account_block .account_block_with_form select div {
   background-color: #B5DDF3;
+}
+.account .account_block .account_block_with_form .result_back {
+  background-color: #B5DDF3;
+  width: 100%;
+}
+.account .account_block .account_block_with_form .result_block {
+  margin-right: 10px;
 }
 .new_photo {
   margin-top: 50px;
@@ -454,6 +468,7 @@ p {
   flex-direction: column;
   text-decoration-line: none;
   background-color: #6f42c1;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .products .block_product .photo {
   width: 100%;
@@ -464,7 +479,6 @@ p {
   flex-direction: column;
   height: 141px;
   background-color: #ffffff;
-  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
   justify-content: center;
   padding: 5px 10px;
 }
@@ -481,13 +495,17 @@ p {
   flex-grow: 1;
   text-align: right;
 }
-.products .block_product .block_text_product_with_button .block_button_product {
+.products .block_product .block_text_product_with_button a {
+  text-decoration-line: none;
   text-align: center;
   flex-grow: 1;
   background: #FFFFFF;
   border: 3px solid #6BBFEE;
   box-sizing: border-box;
   margin: 15px 54px 20px;
+}
+.products .block_product .block_text_product_with_button a h3 {
+  line-height: 44px;
 }
 .our_works_1 {
   width: 100%;
@@ -586,7 +604,7 @@ p {
   text-align: right;
 }
 .product {
-  margin-top: 35px;
+  margin-top: 65px;
   margin-bottom: 20px;
 }
 .product h2 {
@@ -615,6 +633,7 @@ p {
   flex-grow: 1;
 }
 .product .product_photo_and_description .description .order {
+  margin-top: 20px;
   flex-grow: 0;
   display: flex;
   justify-content: space-between;
