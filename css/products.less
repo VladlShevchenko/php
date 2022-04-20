@@ -1,0 +1,60 @@
+@text: 'Mulish', sans-serif;
+@h:'Oswald', sans-serif;
+.products{
+  margin-top: 35px;
+  margin-bottom: 20px;
+  .block_product{
+    margin-bottom: 15px;
+    margin-top: 15px;
+    display: flex;
+    height:547px;
+    flex-direction: column;
+    text-decoration-line: none;
+    background-color: #6f42c1;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    .photo{
+      width:100%;
+      height:406px;
+    }
+    .block_text_product_with_button{
+      display: flex;
+      flex-direction: column;
+      height:141px;
+      background-color: #ffffff;
+
+      justify-content: center;
+      padding:10px;
+      .block_text_product {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        .product_name {
+          width: 218px;
+        }
+        .price {
+          flex-grow:1;
+          text-align: right;
+        }
+      }
+      a{
+        text-decoration-line: none;
+        text-align: center;
+        flex-grow:1;
+        background: #FFFFFF;
+        border: 3px solid #6BBFEE;
+        box-sizing: border-box;
+        margin: 15px 54px 20px;
+        h2{
+          line-height: 44px;
+        }
+        @media(max-width: 768px){
+          margin: 15px 30px 20px;
+        }
+
+
+      }
+
+    }
+  }
+}
