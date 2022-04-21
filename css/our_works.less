@@ -7,7 +7,7 @@
   img{
     border: 1px solid #000000;
     height:203px;
-    @media(max-width: 540px){
+    @media(max-width: 576px){
       height: 150px;
     }
   }
@@ -68,12 +68,12 @@
       &:hover {
         text-decoration-line: underline;
       }
-      @media(max-width: 1200px) and (min-width: 540px){
+      @media(max-width: 1200px) and (min-width: 576px){
         margin-top: 0;
         font-size: 28px;
         line-height: 30px;
       }
-      @media(max-width: 540px){
+      @media(max-width: 576px){
         font-size: 16px;
         line-height: 18px;
         margin-top: 10px;
@@ -88,11 +88,11 @@
       text-align: left;
       font-size: 36px;
       line-height: 40px;
-      @media(max-width: 992px) and (min-width: 540px){
+      @media(max-width: 992px) and (min-width: 576px){
         font-size: 24px;
         line-height: 32px;
       }
-      @media(max-width: 540px){
+      @media(max-width: 576px){
         font-size: 18px;
         line-height: 20px;
       }
@@ -109,7 +109,7 @@
   border:1px solid #000000;
   width:75%;
   height:406px;
-  @media(max-width: 540px){
+  @media(max-width: 576px){
     height: 300px;
   }
 
@@ -164,7 +164,7 @@ section:nth-child(2n){
   background-color: #E1ECF2;;
 }
 .our_work_mobile{
-  @media(min-width: 768px){
+  @media(min-width: 769px){
     display: none;
   }
   padding: 50px 0;
@@ -172,7 +172,8 @@ section:nth-child(2n){
     padding: 20px 0;
     h1 {
       text-align: center;
-      @media (max-width: 540px){
+      font-size: 30px;
+      @media (max-width: 576px){
       font-size: 24px;
       line-height: 26px;
         margin-bottom: 10px;
@@ -181,7 +182,8 @@ section:nth-child(2n){
     .p{
       text-align: center;
       padding: 10px 0;
-      @media(max-width: 540px) {
+      font-size: 24px;
+      @media(max-width: 576px) {
         font-size: 16px;
         line-height: 18px;
         padding: 5px 0;
@@ -192,10 +194,39 @@ section:nth-child(2n){
 
     }
     .text{
-      @media(max-width: 540px){
+      padding:10px 0;
+      @media(max-width: 576px){
         padding: 10px 0;
       }
     }
   }
 
+}
+.more{
+  width:100%;
+  display: flex;
+  justify-content: center;
+  .more_block {
+    width: 236px;
+    height: 58px;
+    background: #F2F2F2;
+    border: 3px solid #78BBDE;
+    box-sizing: border-box;
+    font-family: @h;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 50px;
+    text-align: center;
+    color: #000000;
+    @media(max-width: 768px){
+      font-size: 32px;
+    }
+    @media(max-width: 567px){
+      width:150px;
+      height:45px;
+      font-size: 24px;
+      line-height: 40px;
+    }
+  }
 }

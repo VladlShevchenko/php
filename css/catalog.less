@@ -1,24 +1,37 @@
 .catalog_lend{
-  margin-top: 65px;
+  margin-top: 35px;
   margin-bottom: 20px;
-  .block_catalog{
+  .block_catalog {
     margin-bottom: 15px;
     margin-top: 15px;
     display: flex;
-    height:534px;
+    height: 534px;
     justify-content: center;
     flex-direction: column;
     align-items: center;
     text-decoration-line: none;
-    @media(max-width: 768px)and (min-width: 540px){
-      height:480px;
+    @media (max-width: 576px) and (min-width: 450px) {
+      padding: 0 10%;
     }
+    @media (max-width: 768px)and (min-width: 576px) {
+      height: 480px;
+    }
+    &:hover{
+      margin-top:0;
+      .block_text_catalog{
+        box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+      }
+    }
+  }
     .photo{
       height:406px;
       width:100%;
       border: none;
-      @media(max-width: 768px)and (min-width: 540px){
+      @media(max-width: 768px)and (min-width: 576px){
         height:340px;
+      }
+      @media(max-width: 576px){
+        height:80%;
       }
     }
     .block_text_catalog{
@@ -36,9 +49,7 @@
       }
       p{
         padding: 0 4%;
-
       }
-
       hr{
         width:50%;
         background-color:#1E7DB2;
@@ -57,19 +68,44 @@
         padding-top: 30px;
         @media(max-width: 768px){
           font-size: 20px;
+          padding-top: 15px;
         }
       }
-
     }
-    &:hover{
-      margin-top:0;
-      .block_text_catalog{
-        box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  }
+.catalog_lending{
+  margin-bottom: 15px;
+  margin-top: 15px;
+  display: flex;
+  height: 534px;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-decoration-line: none;
+  @media(max-width: 480px){
+    height:250px;
+    a{
+      height:250px;
+    }
+    .block_text_catalog{
+      p{
+          font-size: 10px;
+          line-height: 12px;
       }
-
-
+      h2{
+        font-size: 12px;
+        line-height: 14px;
+        padding-top:10px;
+        padding-bottom: 0;
+      }
+      hr{
+        margin-top:5px;
+        margin-bottom:3px;
+        border: 0.2px solid #1E7DB2
+      }
     }
-
-
+  }
+  @media(max-width: 768px)and (min-width: 480px){
+    height:480px;
   }
 }
