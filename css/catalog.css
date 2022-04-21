@@ -59,14 +59,9 @@
   flex-direction: column;
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
 }
-@media (max-width: 768px) and (min-width: 576px) {
+@media (max-width: 768px) {
   .catalog_lend .block_text_catalog {
     height: 160px;
-  }
-}
-@media (max-width: 576px) {
-  .catalog_lend .block_text_catalog {
-    height: 120px;
   }
 }
 .catalog_lend .block_text_catalog p {
@@ -128,6 +123,11 @@
     margin-top: 5px;
     margin-bottom: 3px;
     border: 0.2px solid #1E7DB2;
+  }
+}
+@media (max-width: 480px) and (max-width: 576px) {
+  .catalog_lending .block_text_catalog {
+    height: 140px;
   }
 }
 @media (max-width: 768px) and (min-width: 480px) {
