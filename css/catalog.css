@@ -64,6 +64,11 @@
     height: 160px;
   }
 }
+@media (max-width: 576px) {
+  .catalog_lend .block_text_catalog {
+    height: 120px;
+  }
+}
 .catalog_lend .block_text_catalog p {
   padding: 0 4%;
 }
